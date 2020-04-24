@@ -1,3 +1,2 @@
 # tudoex
-/:
-BRUH MOMENT
+/:XIAOMI
