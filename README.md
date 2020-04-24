@@ -1,7 +1,2 @@
 # tudoex
-/:
-Push
-
-Pop
-
-Poor
+/:OK
