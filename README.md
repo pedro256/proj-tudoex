@@ -1,3 +1,3 @@
 # tudoex
 /:
-BRUH
+BRUH MOMENT
