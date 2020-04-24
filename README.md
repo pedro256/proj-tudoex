@@ -1,2 +1,7 @@
 # tudoex
-/:XIAOMI
+/:
+Push
+
+Pop
+
+Poor
