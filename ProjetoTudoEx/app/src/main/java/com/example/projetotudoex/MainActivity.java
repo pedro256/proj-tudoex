@@ -1,36 +1,30 @@
 package com.example.projetotudoex;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import jdk.javadoc.internal.tool.Start;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btcadastrar;
-    Button btEntrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btcadastrar = (Button) findViewById(R.id.btcadastrar);
-        btEntrar = (Button) findViewById(R.id.btentrar);
+        
+       Public void IrParaActvity_Cadastro(View view){
 
-        btcadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Chama = new Intent(MainActivity.this, CadastroActivity.class);
-                startActivity(Chama);
-            }
-        });
+        Intent IrParaActvity_Cadastro = new Intent(getApplicationContext(), Cadastro.class);
+        startActivity(Act_Cad);
+       }
 
-        btEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Chama = new Intent(MainActivity.this, Entrar.class);
-                startActivity(Chama);
-            }
-        });
+       Public void IrParaActvity_Cadastro(View view){
+
+        Intent Act_Ent = new Intent(getApplicationContext(), Entrar.class);
+        startActivity(Act_Ent);
+       }
+
+        
     }
 }
