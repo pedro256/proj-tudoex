@@ -6,13 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="496dp"
+        android:layout_height="973dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        app:srcCompat="@drawable/fundoprincipal" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="122dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="144dp"
+        android:fontFamily="cursive"
+        android:text="Ex"
+        android:textColor="#000000"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btentrar"
+        android:layout_width="149dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/borda"
+        android:backgroundTint="#FAD0FA"
+        android:fontFamily="serif"
+        android:text="Entrar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btcadastrar"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/borda"
+        android:backgroundTint="#FAD0FA"
+        android:fontFamily="serif"
+        android:text="Cadastrar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="190dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="cursive"
+        android:text="Tudo "
+        android:textColor="#000000"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
