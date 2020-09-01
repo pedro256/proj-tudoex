@@ -220,17 +220,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btsalvar"
-        android:layout_width="169dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="72dp"
-        android:backgroundTint="#ECB0F6"
-        android:fontFamily="serif"
-        android:text="Salvar"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
