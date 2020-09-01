@@ -1,7 +1,6 @@
 package com.example.projetotudoex;
 
 import androidx.appcompat.app.AppCompatActivity;
-import jdk.javadoc.internal.tool.Start;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,19 +11,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button btnEntrar = (Button) findViewById(R.id.btentrar);
+        Button btnCadastro = (Button) findViewById(R.id.btcadastrar);
+
+        btnCadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proximaTela(v,CadastroActivity.class);
+            }
+        });
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proximaTela(v,Entrar.class);
+            }
+        });
         
-       Public void IrParaActvity_Cadastro(View view){
+    }
 
-        Intent IrParaActvity_Cadastro = new Intent(getApplicationContext(), Cadastro.class);
-        startActivity(Act_Cad);
-       }
-
-       Public void IrParaActvity_Cadastro(View view){
-
-        Intent Act_Ent = new Intent(getApplicationContext(), Entrar.class);
-        startActivity(Act_Ent);
-       }
-
-        
+    public void proximaTela(View view,Class tela){
+        Intent Ir = new Intent(getApplicationContext(), tela);
+        startActivity(Ir);
     }
 }

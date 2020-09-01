@@ -216,7 +216,7 @@
         android:background="@drawable/borda"
         android:backgroundTint="#FFDEDE"
         android:text="Voltar"
-        android:OnClick"VoltarMain"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

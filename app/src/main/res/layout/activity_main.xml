@@ -43,7 +43,6 @@
         android:fontFamily="serif"
         android:text="Entrar"
         android:textSize="20dp"
-        android:OnClick="IrParaActvity_Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -59,7 +58,6 @@
         android:fontFamily="serif"
         android:text="Cadastrar"
         android:textSize="20dp"
-        android:OnClick="IrParaActvity_Cadastro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
