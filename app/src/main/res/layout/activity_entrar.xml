@@ -120,7 +120,7 @@
         android:fontFamily="serif"
         android:foregroundGravity="center_vertical|center_horizontal"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Usuário:"
+        android:text="Pedrogay"
         android:textAlignment="gravity"
         android:textColor="#000000"
         android:textDirection="firstStrongRtl"
