@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.projetotudoex">
+    package="com.app.olx">
+    <!-- Permissões de Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissão para a galeria -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -9,21 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".activity.DetalhesProdutoActivity"
+            android:parentActivityName=".activity.AnunciosActivity"></activity>
+        <activity android:name=".activity.CadastrarAnuncioActivity" />
+        <activity
+            android:name=".activity.MeusAnunciosActivity"
+            android:label="@string/title_activity_meus_anuncios"
+            android:parentActivityName=".activity.AnunciosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.olx.activity.AnunciosActivity" />
         </activity>
-        <activity android:name=".Entrar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".CadastroActivity">
+        <activity android:name=".activity.CadastroActivity" />
+        <activity android:name=".activity.AnunciosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

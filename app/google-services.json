@@ -1,63 +1,42 @@
 {
   "project_info": {
-    "project_number": "767826093474",
-    "firebase_url": "https://tudo-ex-30005.firebaseio.com",
-    "project_id": "tudo-ex-30005",
-    "storage_bucket": "tudo-ex-30005.appspot.com"
+    "project_number": "1063282332544",
+    "firebase_url": "https://olx-clone-7898a.firebaseio.com",
+    "project_id": "olx-clone-7898a",
+    "storage_bucket": "olx-clone-7898a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:767826093474:android:5f34134c1e3f293a32befb",
+        "mobilesdk_app_id": "1:1063282332544:android:0263c19862d4cccc",
         "android_client_info": {
-          "package_name": "com.example.projetotudoex"
+          "package_name": "com.app.olx"
         }
       },
       "oauth_client": [
         {
-          "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
+          "client_id": "1063282332544-nqq0q46avfl4nek3hf6qka48k6dtp0t8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.olx",
+            "certificate_hash": "05c132a4169a581ab9aa976bb5c1654505a4b3f7"
+          }
+        },
+        {
+          "client_id": "1063282332544-iuicq3po0idv07adf7fdqqlv47f8a9kr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBPsK7nGFYcjb1QQZV3Bp1dLr3tMPI7Uh8"
+          "current_key": "AIzaSyBAiiI3FZvqkPbMUudp_rx0lArvKfNJBIk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:767826093474:android:9b09aeefd0a690ec32befb",
-        "android_client_info": {
-          "package_name": "com.exemplos.tudoex"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBPsK7nGFYcjb1QQZV3Bp1dLr3tMPI7Uh8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
+              "client_id": "1063282332544-iuicq3po0idv07adf7fdqqlv47f8a9kr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
