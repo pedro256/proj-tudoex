@@ -1,5 +1,35 @@
 <resources>
-    <string name="app_name">ProjetoTudoEx</string>
-    <string name="voltar">Voltar</string>
-<string name="rebeca">Rebeca</string>
+    <string name="app_name">tudoex</string>
+    <string name="titulo_Cadastro">Cadastro do usuário</string>
+    <string-array name="lista_estados">
+        <item>Acre</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Distrito Federal</item>
+        <item>Espírito Santo</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Minas Gerais</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Parana</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Santa Catarina</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
+    <string name="title_activity_meus_anuncios">Meus Anuncios</string>
+
 </resources>

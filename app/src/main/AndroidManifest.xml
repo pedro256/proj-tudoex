@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.projetotudoex">
+    package="com.app.tudoex">
+
+    <!-- permissoes de acesso de internet-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- permissoes galeria / camera -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+
 
     <application
         android:allowBackup="true"
@@ -9,21 +18,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Entrar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".CadastroActivity">
+        <activity android:name=".activity.CadastroAnuncioActivity"></activity>
+        <activity
+            android:name=".activity.MeusAnunciosActivity"
+            android:label="@string/title_activity_meus_anuncios"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activity.HomeUserActivity"/>
+        <activity android:name=".activity.HomeUserActivity" />
+        <activity
+            android:name=".activity.CadastroActivity"
+            android:label="@string/titulo_Cadastro"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

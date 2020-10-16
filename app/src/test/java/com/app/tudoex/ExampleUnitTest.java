@@ -1,4 +1,4 @@
-package com.example.projetotudoex;
+package com.app.tudoex;
 
 import org.junit.Test;
 

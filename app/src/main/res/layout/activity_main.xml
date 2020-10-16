@@ -1,78 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="496dp"
-        android:layout_height="973dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.553"
-        app:srcCompat="@drawable/fundoprincipal" />
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/lg" />
 
-    <TextView
-        android:id="@+id/titulo2"
-        android:layout_width="122dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="144dp"
-        android:fontFamily="cursive"
-        android:text="Ex"
-        android:textColor="#000000"
-        android:textSize="100sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email ">
 
-    <Button
-        android:id="@+id/btentrar"
-        android:layout_width="149dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="232dp"
-        android:background="@drawable/borda"
-        android:backgroundTint="#FAD0FA"
-        android:fontFamily="serif"
-        android:text="Entrar"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email "
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btcadastrar"
-        android:layout_width="147dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/borda"
-        android:backgroundTint="#FAD0FA"
-        android:fontFamily="serif"
-        android:text="Cadastrar"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Senha">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="190dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="cursive"
-        android:text="Tudo "
-        android:textColor="#000000"
-        android:textSize="100sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:onClick="autenticarUsuario"
+            android:text="Entrar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="telaCadastro"
+            android:text="Cadastrar-se"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

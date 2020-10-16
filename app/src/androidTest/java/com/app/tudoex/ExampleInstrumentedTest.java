@@ -1,4 +1,4 @@
-package com.example.projetotudoex;
+package com.app.tudoex;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.projetotudoex", appContext.getPackageName());
+        assertEquals("com.app.tudoex", appContext.getPackageName());
     }
 }

@@ -1,63 +1,42 @@
 {
   "project_info": {
-    "project_number": "767826093474",
-    "firebase_url": "https://tudo-ex-30005.firebaseio.com",
-    "project_id": "tudo-ex-30005",
-    "storage_bucket": "tudo-ex-30005.appspot.com"
+    "project_number": "605104167657",
+    "firebase_url": "https://tudoex-7244f.firebaseio.com",
+    "project_id": "tudoex-7244f",
+    "storage_bucket": "tudoex-7244f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:767826093474:android:5f34134c1e3f293a32befb",
+        "mobilesdk_app_id": "1:605104167657:android:aaa0604e02a74b47b06e78",
         "android_client_info": {
-          "package_name": "com.example.projetotudoex"
+          "package_name": "com.app.tudoex"
         }
       },
       "oauth_client": [
         {
-          "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
+          "client_id": "605104167657-fnkg81riedt79s9ia269smjm47e9h2dm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tudoex",
+            "certificate_hash": "5a86f07b4b3565ebfe096c8bf1578754bdc161e9"
+          }
+        },
+        {
+          "client_id": "605104167657-53itqd9ar4m99fageolf26v387l0mjbu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBPsK7nGFYcjb1QQZV3Bp1dLr3tMPI7Uh8"
+          "current_key": "AIzaSyBaSqSocyh29MnNsn1pzanMBLaFhj_6MSw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:767826093474:android:9b09aeefd0a690ec32befb",
-        "android_client_info": {
-          "package_name": "com.exemplos.tudoex"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBPsK7nGFYcjb1QQZV3Bp1dLr3tMPI7Uh8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "767826093474-sv5th9ffklnd3d9n05ch3kra2s69u7cl.apps.googleusercontent.com",
+              "client_id": "605104167657-53itqd9ar4m99fageolf26v387l0mjbu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

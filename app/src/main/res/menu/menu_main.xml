@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_anunciar"
+        android:title="Anunciar"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="Meu Perfil"
+        />
+    <item
+        android:id="@+id/menu_mensagens"
+        android:title="Mensagens"
+        />
+
+    <item
+        android:id="@+id/menu_anuncios"
+        android:title="Meus Anúncios"
+        />
+    <item
+        android:id="@+id/menu_sair"
+        android:title="Sair"
+        />
+
+</menu>
