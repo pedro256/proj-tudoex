@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.CadastroAnuncioActivity">
+    tools:context=".activity.CreateAnuncios">
+
 
     <ScrollView
         style="@android:style/Widget"
@@ -21,57 +22,53 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                android:padding="5dp">
+                android:padding="3dp">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imgCadastro1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:visibility="visible"
                     app:srcCompat="@drawable/ft_padrao" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/imgCadastro2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:visibility="visible"
                     app:srcCompat="@drawable/ft_padrao" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/imgCadastro3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:visibility="visible"
                     app:srcCompat="@drawable/ft_padrao" />
             </LinearLayout>
 
-            <LinearLayout
+            <Spinner
+                android:id="@+id/spinnerTam"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
-                <Spinner
-                    android:id="@+id/spinner4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:padding="5dp" />
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
-                <Spinner
-                    android:id="@+id/spinner2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:padding="5dp" />
-            </LinearLayout>
+            <Spinner
+                android:id="@+id/spinnerCor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/txtTitulo"
@@ -85,30 +82,6 @@
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-
-            <EditText
-                android:id="@+id/txtCor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="16dp"
-                android:ems="10"
-                android:hint="Cor"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/txtTamanho"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="16dp"
-                android:ems="10"
-                android:hint="Tamanho"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:textAlignment="center" />
 
             <com.blackcat.currencyedittext.CurrencyEditText
                 android:id="@+id/txtValor"
@@ -140,13 +113,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
                 android:background="@color/colorPrimaryDark"
+                android:onClick="validarDados"
                 android:padding="10dp"
                 android:text="Cadastrar"
                 android:textColor="@color/design_default_color_background" />
+
         </LinearLayout>
     </ScrollView>
-
-
-
 
 </LinearLayout>

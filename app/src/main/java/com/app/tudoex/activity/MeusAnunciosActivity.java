@@ -26,7 +26,7 @@ public class MeusAnunciosActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MeusAnunciosActivity.this,CadastroAnuncioActivity.class));
+                startActivity(new Intent(MeusAnunciosActivity.this,CreateAnuncios.class));
             }
         });
     }

@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">tudoex</string>
+    <string name="app_name">TudoEx</string>
     <string name="titulo_Cadastro">Cadastro do usuário</string>
+
     <string-array name="lista_estados">
         <item>Acre</item>
         <item>Alagoas</item>
@@ -30,6 +31,63 @@
         <item>Sergipe</item>
         <item>Tocantins</item>
     </string-array>
+    <string-array name="cores">
+        <item>Amarelo</item>
+        <item>Anil</item>
+        <item>Azul</item>
+        <item>Bege</item>
+        <item>Branco</item>
+        <item>Chocolate</item>
+        <item>Ciano</item>
+        <item>Cinza</item>
+        <item>Coral</item>
+        <item>Dourado</item>
+        <item>Escarlate</item>
+        <item>Esmeralda</item>
+        <item>Laranja</item>
+        <item>Lilás</item>
+        <item>Magenta</item>
+        <item>Marrom</item>
+        <item>Negro</item>
+        <item>Ouro</item>
+        <item>Preto</item>
+        <item>Púrpura</item>
+        <item>Rosa</item>
+        <item>Roxo</item>
+        <item>Salmão</item>
+        <item>Turquesa</item>
+        <item>Uva</item>
+        <item>Verde</item>
+        <item>Vermelho</item>
+        <item>Vinho</item>
+        <item>Violeta</item>
+    </string-array>
+    <string-array name="categoriasroupa">
+        <item>Camisetas</item>
+        <item>Blusinhas</item>
+        <item>Camisas</item>
+        <item>Suéteres e cardigans</item>
+        <item>Blazers, jaquetas e casacos</item>
+        <item>Coletes e quimonos</item>
+        <item>Regatas</item>
+        <item>Shorts e bermudas</item>
+        <item> Calças</item>
+        <item>Vestidos</item>
+        <item>Saias</item>
+        <item>Meias-calças</item>
+        <item>Cachecóis e pashminas</item>
+        <item>Lenços</item>
+        <item>Bolsas</item>
+        <item>Sapatos</item>
+        <item>Meias</item>
+    </string-array>
+    <string-array name="tamanhoroupa">
+        <item>P</item>
+        <item>M</item>
+        <item>G</item>
+        <item>GG</item>
+    </string-array>
+
     <string name="title_activity_meus_anuncios">Meus Anuncios</string>
 
 </resources>
