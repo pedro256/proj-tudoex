@@ -71,7 +71,7 @@
                 android:layout_weight="1" />
 
             <EditText
-                android:id="@+id/txtTitulo"
+                android:id="@+id/txtTituloAnucio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -84,7 +84,7 @@
 
 
             <com.blackcat.currencyedittext.CurrencyEditText
-                android:id="@+id/txtValor"
+                android:id="@+id/txtValorAnuncio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.7
+        targetCompatibility = 1.7
+    }
 }
 
 dependencies {
@@ -40,6 +44,12 @@ dependencies {
     implementation 'com.github.BlacKCaT27:CurrencyEditText:2.0.2'
     //dependencia mask telefone
     implementation 'com.github.santalu:maskara:1.0.0'
+
+    //dependencia dialog de progresso
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    //dependencia picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
 }
 apply plugin: 'com.google.gms.google-services'

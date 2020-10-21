@@ -1,7 +1,6 @@
 package com.app.tudoex.activity;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +11,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Debug;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -29,12 +27,14 @@ import com.app.tudoex.models.Anuncio;
 import com.blackcat.currencyedittext.CurrencyEditText;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FirebaseStorage;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import dmax.dialog.SpotsDialog;
 
 public class CreateAnuncios extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,6 +44,8 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
     private CurrencyEditText txtValor;
     private Anuncio anuncio = new Anuncio();
     private StorageReference storage;
+    private android.app.AlertDialog dialog;
+
 
     private String[] permissoes = new String[]{
             Manifest.permission.READ_EXTERNAL_STORAGE
@@ -142,9 +144,9 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
     }
 
     private void inicializarComponents(){
-        txtTitulo = findViewById(R.id.txtTitulo);
+        txtTitulo = findViewById(R.id.txtTituloAnucio);
         txtDescricao = findViewById(R.id.txtDescricao);
-        txtValor = findViewById(R.id.txtValor);
+        txtValor = findViewById(R.id.txtValorAnuncio);
         spCategoria = findViewById(R.id.spinnerCategoria);
         spTam = findViewById(R.id.spinnerTam);
         spCor = findViewById(R.id.spinnerCor);
@@ -188,6 +190,14 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
     }
     public void salvarAnuncio(){
 
+        dialog = new SpotsDialog.Builder()
+                .setContext(this)
+                .setMessage("Salvando!")
+                .setCancelable(false)
+                .build();
+        dialog.show();
+
+
         //salvar img no storage
         for(int i = 0;i<listaFotoRecuperadas.size();i++){
             String urlImg = listaFotoRecuperadas.get(i);
@@ -202,18 +212,30 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
                 .child("anuncios")
                 .child(anuncio.getId())
                 .child("imagem"+contador);
+
         //fazer upload do arquivo
         UploadTask uploadTask = imagemAnuncio.putFile(Uri.parse(url));
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
-                String urlConvertido = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
-                listaURLFoto.add(urlConvertido);
-                if(totalFotos == listaURLFoto.size()){
-                    anuncio.setFotos(listaURLFoto);
-                    anuncio.salvar();
-                }
+                Task<Uri> task = taskSnapshot.getMetadata().getReference().getDownloadUrl();
+                task.addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        String photoLink = uri.toString();
+                        listaURLFoto.add(photoLink);
+                        if(totalFotos == listaURLFoto.size()){
+                            anuncio.setFotos(listaURLFoto);
+                            anuncio.salvar();
+
+                            dialog.dismiss();
+                            finish();
+                        }
+                    }
+                });
+
+
 
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -232,7 +254,7 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
         String cor = spCor.getSelectedItem().toString();
         String tam = spTam.getSelectedItem().toString();
         String titulo = txtTitulo.getText().toString();
-        String valor = String.valueOf(txtValor.getRawValue());
+        String valor = txtValor.getText().toString();
         String descricao = txtDescricao.getText().toString();
 
         anuncio.setCategoria(categoria);
@@ -247,13 +269,14 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
     }
     public void validarDados(View v){
         anuncio = configAnuncio();
+        String valor = String.valueOf(txtValor.getRawValue());
 
         if(listaFotoRecuperadas.size()!=0){
             if(!anuncio.getCategoria().isEmpty()){
                 if(!anuncio.getCor().isEmpty()){
                     if(!anuncio.getTamanho().isEmpty()){
                         if(!anuncio.getTitulo().isEmpty()){
-                            if(!anuncio.getValor().isEmpty() && !anuncio.getValor().equals("0")){
+                            if(!valor.isEmpty() && !valor.equals("0")){
                                 if(!anuncio.getDescricao().isEmpty()){
                                     salvarAnuncio();
                                 }else{
