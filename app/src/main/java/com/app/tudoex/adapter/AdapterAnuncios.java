@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -64,6 +65,24 @@ public class AdapterAnuncios extends RecyclerView.Adapter<AdapterAnuncios.MyView
             titulo = itemView.findViewById(R.id.txtTituloAnucio);
             valor = itemView.findViewById(R.id.txtValorAnuncio);
             foto = itemView.findViewById(R.id.imgAnuncio);
+
+            itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    int pos = getAdapterPosition();
+
+                    // check if item still exists
+                    if(pos != RecyclerView.NO_POSITION){
+                        Log.e("Erro aqui:","Clicou");
+                        Anuncio anuncioSelecionado = anuncios.get(pos);
+                        anuncioSelecionado.remover();
+
+                        Toast.makeText(v.getContext(), "Você apagou um anúncio" + anuncioSelecionado.getTitulo(), Toast.LENGTH_SHORT).show();
+                    }
+                    return false;
+                }
+            });
+
 
         }
     }

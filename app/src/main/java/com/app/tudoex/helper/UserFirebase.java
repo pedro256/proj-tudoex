@@ -1,12 +1,14 @@
 package com.app.tudoex.helper;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
 import com.app.tudoex.activity.HomeUserActivity;
+import com.app.tudoex.activity.MainActivity;
 import com.app.tudoex.config.FirebaseConfig;
 import com.app.tudoex.models.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,8 +21,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import dmax.dialog.SpotsDialog;
+
 
 public class UserFirebase {
+
     public static FirebaseUser getUsuarioAtual(){
         FirebaseAuth usuario = FirebaseConfig.getFirebaseAutenticacao();
         return usuario.getCurrentUser();
@@ -47,6 +52,7 @@ public class UserFirebase {
 
     }
     public static void redirecionaUsuarioLogado(final Activity activity){
+
         FirebaseUser user = getUsuarioAtual();
         if(user != null){
             DatabaseReference userRef = FirebaseConfig.getFirebaseDatabase()
@@ -67,6 +73,7 @@ public class UserFirebase {
                 }
             });
         }
+
 
     }
     public static String getIdentificadorUsuario(){

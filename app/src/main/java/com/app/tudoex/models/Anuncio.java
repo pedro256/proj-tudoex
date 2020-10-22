@@ -39,6 +39,21 @@ public class Anuncio {
                 .child(getId())
                 .setValue(this);
     }
+    public void remover(){
+        String idUser = FirebaseConfig.getIdUsuario();
+        DatabaseReference anuncioRef = FirebaseConfig.getFirebaseDatabase().child("meus_anuncios").child(idUser).child(getId());
+
+        anuncioRef.removeValue();
+        removerPublico();
+    }
+
+    public void removerPublico(){
+        DatabaseReference anuncioRef = FirebaseConfig.getFirebaseDatabase().child("anuncios").child(getCategoria()).child(getCor()).child(getId());
+        anuncioRef.removeValue();
+
+        anuncioRef.removeValue();
+    }
+
 
 
     public String getId() {
