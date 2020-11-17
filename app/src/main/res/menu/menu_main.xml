@@ -2,17 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/menu_search"
+        android:title="Pesquisar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
         android:id="@+id/menu_anunciar"
         android:title="Anunciar"
         app:showAsAction="always"
+        android:icon="@drawable/ic_add_branco"
         />
+
     <item
         android:id="@+id/menu_perfil"
         android:title="Meu Perfil"
-        />
-    <item
-        android:id="@+id/menu_mensagens"
-        android:title="Mensagens"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"
         />
 
     <item

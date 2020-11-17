@@ -1,14 +1,12 @@
 package com.app.tudoex.helper;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.app.tudoex.activity.HomeUserActivity;
-import com.app.tudoex.activity.MainActivity;
+import com.app.tudoex.activity.AnunciosActivity;
 import com.app.tudoex.config.FirebaseConfig;
 import com.app.tudoex.models.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,8 +18,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
-
-import dmax.dialog.SpotsDialog;
 
 
 public class UserFirebase {
@@ -63,7 +59,7 @@ public class UserFirebase {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     Usuario usuario = snapshot.getValue(Usuario.class);
                     if(usuario != null){
-                        activity.startActivity(new Intent(activity, HomeUserActivity.class));
+                        activity.startActivity(new Intent(activity, AnunciosActivity.class));
                     }
                 }
 

@@ -42,6 +42,8 @@ public class CadastroActivity extends AppCompatActivity {
         cidade = findViewById(R.id.txtCidade);
 
     }
+
+
     public void validarCadastro(View view){
         String txtNome = nome.getText().toString();
         String txtEmail = email.getText().toString();
@@ -58,6 +60,7 @@ public class CadastroActivity extends AppCompatActivity {
                             if(!txtCidade.isEmpty()){
                                 Usuario usuario = new Usuario();
                                 usuario.setNome(txtNome);
+                                usuario.setImage("");
                                 usuario.setEmail(txtEmail);
                                 usuario.setSenha(txtSenha);
                                 usuario.setTelefone(txtTelefone);
@@ -101,7 +104,7 @@ public class CadastroActivity extends AppCompatActivity {
                         usuario.setId(idUser);
                         usuario.salvar();
                         UserFirebase.atualizarNomeUser(usuario.getNome());
-                        startActivity(new Intent(CadastroActivity.this,HomeUserActivity.class));
+                        startActivity(new Intent(CadastroActivity.this, AnunciosActivity.class));
                         finish();
                         Toast.makeText(CadastroActivity.this,"Sucesso ao cadastrar usuário!",Toast.LENGTH_SHORT).show();
                     }catch (Exception e){

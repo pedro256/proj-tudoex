@@ -38,7 +38,7 @@ import dmax.dialog.SpotsDialog;
 
 public class CreateAnuncios extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText txtTitulo,txtDescricao;
+    private EditText txtTitulo,txtDescricao,txtTelefone;
     private ImageView img1,img2,img3;
     private Spinner spCategoria,spTam,spCor;
     private CurrencyEditText txtValor;
@@ -147,6 +147,7 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
         txtTitulo = findViewById(R.id.txtTituloAnucio);
         txtDescricao = findViewById(R.id.txtDescricao);
         txtValor = findViewById(R.id.txtValorAnuncio);
+        txtTelefone = findViewById(R.id.txtTelAnunc);
         spCategoria = findViewById(R.id.spinnerCategoria);
         spTam = findViewById(R.id.spinnerTam);
         spCor = findViewById(R.id.spinnerCor);
@@ -256,6 +257,7 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
         String titulo = txtTitulo.getText().toString();
         String valor = txtValor.getText().toString();
         String descricao = txtDescricao.getText().toString();
+        String telefone = txtTelefone.getText().toString();
 
         anuncio.setCategoria(categoria);
         anuncio.setCor(cor);
@@ -263,6 +265,8 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
         anuncio.setTitulo(titulo);
         anuncio.setValor(valor);
         anuncio.setDescricao(descricao);
+        anuncio.setTelefone(telefone);
+
 
         return anuncio;
 
@@ -278,7 +282,12 @@ public class CreateAnuncios extends AppCompatActivity implements View.OnClickLis
                         if(!anuncio.getTitulo().isEmpty()){
                             if(!valor.isEmpty() && !valor.equals("0")){
                                 if(!anuncio.getDescricao().isEmpty()){
-                                    salvarAnuncio();
+                                    if(!anuncio.getTelefone().isEmpty()) {
+                                        salvarAnuncio();
+                                    }else{
+                                        exibirMsgErro("Inserir um telefone para o item!");
+
+                                    }
                                 }else{
                                     exibirMsgErro("Inserir uma descricão para o item!");
                                 }

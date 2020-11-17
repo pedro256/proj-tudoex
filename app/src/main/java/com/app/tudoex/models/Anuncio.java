@@ -3,13 +3,15 @@ package com.app.tudoex.models;
 import com.app.tudoex.config.FirebaseConfig;
 import com.google.firebase.database.DatabaseReference;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Anuncio {
+public class Anuncio implements Serializable {
 
     private String id;
     private String categoria;
     private String cor;
+    private String telefone;
     private String tamanho;
     private String titulo;
     private String valor;
@@ -54,7 +56,13 @@ public class Anuncio {
         anuncioRef.removeValue();
     }
 
+    public String getTelefone() {
+        return telefone;
+    }
 
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
     public String getId() {
         return id;

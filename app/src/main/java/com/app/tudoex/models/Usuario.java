@@ -13,6 +13,9 @@ public class Usuario {
     private String Estado;
     private String Cidade;
 
+
+    private String Image;
+
     public Usuario() {
 
     }
@@ -21,7 +24,13 @@ public class Usuario {
         DatabaseReference usuarios = firebaseRef.child("usuarios").child(getId());
         usuarios.setValue(this);
     }
+    public String getImage() {
+        return Image;
+    }
 
+    public void setImage(String image) {
+        this.Image = image;
+    }
     public String getId() {
         return id;
     }

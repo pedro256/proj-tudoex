@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+         <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+             android:id="@+id/avatarIv"
+             android:layout_width="150dp"
+             android:layout_gravity="center"
+             android:layout_marginTop="40dp"
+             android:layout_height="150dp"
+             
+             android:background="@drawable/ic_avatar"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/userTv"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+            <ImageButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_margin="5sp"
+                android:src="@drawable/ic_editar"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/retangle"
+            android:textAlignment="center"
+            android:text="projeto123@gmail.com"
+            android:textColor="#502707"
+            android:id="@+id/emailTv"
+            android:layout_margin="3sp"
+            android:textSize="21sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+             android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Telefone:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="3sp"
+            android:textAlignment="center"
+            android:textColor="#502707"
+            android:background="@drawable/retangle"
+            android:id="@+id/telefoneTv"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Estado:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+android:layout_margin="3sp"
+            android:textAlignment="center"
+            android:textColor="#502707"
+            android:background="@drawable/retangle"
+            android:id="@+id/estadoTv"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+              android:layout_gravity="center"
+            android:text="Cidade:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="3sp"
+            android:background="@drawable/retangle"
+            android:textAlignment="center"
+            android:textColor="#502707"
+            android:id="@+id/cidadeTv"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/telbtn"
+        android:layout_gravity="center"
+        android:text="Ver Meus Anuncios"
+        android:textSize="20sp"
+        android:inputType="textCapSentences"
+        />
+
+</LinearLayout>
+</ScrollView>

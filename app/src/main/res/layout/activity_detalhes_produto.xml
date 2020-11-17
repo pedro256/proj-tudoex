@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetalhesProdutoActivity">
+    <TextView
+        android:id="@+id/textTituloDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#000"
+      android:layout_marginBottom="7sp"
+
+        android:text="Titulo"
+        android:textSize="16sp" />
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:textSize="25sp"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_descr"/>
+        <TextView
+            android:id="@+id/textPrecoDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="70sp"
+         android:background="#0EFFDB"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:text="R$ 250,00"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#83F4D4">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Peça:"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/textPecaDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+               android:layout_margin="5dp"
+            android:text="categoria"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tamanho:"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/textTamDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="categoria"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cor:"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/textCorDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="categoria"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/textDescricaoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="categoria"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+
+
+
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/telbtn"
+        android:layout_gravity="center"
+        android:onClick="visualizarTelefone"
+        android:text="Ver Telefone"
+        android:textSize="20sp"
+        android:inputType="textCapSentences"
+         />
+
+</LinearLayout>
+</ScrollView>

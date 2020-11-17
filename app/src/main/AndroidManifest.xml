@@ -4,7 +4,10 @@
     <!-- permissoes de acesso de internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- permissoes galeria / camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,13 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.CreateAnuncios"></activity>
+        <activity android:name=".activity.ProfileActivity"></activity>
+        <activity android:name=".activity.DetalhesProdutoActivity" />
+        <activity android:name=".activity.CreateAnuncios" />
         <activity
             android:name=".activity.MeusAnunciosActivity"
             android:label="@string/title_activity_meus_anuncios"
-            android:parentActivityName=".activity.HomeUserActivity"
+            android:parentActivityName=".activity.AnunciosActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.HomeUserActivity" />
+        <activity android:name=".activity.AnunciosActivity" />
         <activity
             android:name=".activity.CadastroActivity"
             android:label="@string/titulo_Cadastro"

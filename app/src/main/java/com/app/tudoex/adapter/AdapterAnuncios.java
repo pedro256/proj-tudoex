@@ -1,12 +1,14 @@
 package com.app.tudoex.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Debug;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.tudoex.R;
+import com.app.tudoex.activity.DetalhesProdutoActivity;
 import com.app.tudoex.models.Anuncio;
 import com.squareup.picasso.Picasso;
 
@@ -39,7 +42,7 @@ public class AdapterAnuncios extends RecyclerView.Adapter<AdapterAnuncios.MyView
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Anuncio anuncio = anuncios.get(position);
+        final Anuncio anuncio = anuncios.get(position);
 
         holder.titulo.setText(anuncio.getTitulo());
         holder.valor.setText(anuncio.getValor());
@@ -47,6 +50,9 @@ public class AdapterAnuncios extends RecyclerView.Adapter<AdapterAnuncios.MyView
         List<String> urlFotos = anuncio.getFotos();
         String urlCapa = urlFotos.get(0);
         Picasso.get().load(urlCapa).into(holder.foto);
+
+
+
 
     }
 
@@ -59,12 +65,14 @@ public class AdapterAnuncios extends RecyclerView.Adapter<AdapterAnuncios.MyView
         TextView titulo;
         TextView valor;
         ImageView foto;
+        LinearLayout anuncioLayout;
 
         public MyViewHolder(View itemView){
             super(itemView);
             titulo = itemView.findViewById(R.id.txtTituloAnucio);
             valor = itemView.findViewById(R.id.txtValorAnuncio);
             foto = itemView.findViewById(R.id.imgAnuncio);
+            anuncioLayout =itemView.findViewById(R.id.anuncioLayout);
 
             itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
