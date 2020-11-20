@@ -67,10 +67,8 @@ A tela inicial será onde o usuário irá logar ou se cadastrar para visualizar 
 <p>📍 Membros deverão testar e consertar os devidos erros.</p>
 
 ## Imagens de APP
-<div>
   * TELA INICIAL
- </div>
-![TelaLOGIN](https://res.cloudinary.com/dzf56esap/image/upload/v1605910968/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_1_f5sr3c.jpg)
+![TelaLogin](https://res.cloudinary.com/dzf56esap/image/upload/v1605910968/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_1_f5sr3c.jpg)
 
 ## 📲 **Instalação**
 
