@@ -67,12 +67,13 @@ A tela inicial será onde o usuário irá logar ou se cadastrar para visualizar 
 <p>📍 Membros deverão testar e consertar os devidos erros.</p>
 
 ## Imagens de APP
-  * TELA LOGIN E CADASTRO
+  - TELA LOGIN E CADASTRO
   <div>
   <img src="https://res.cloudinary.com/dzf56esap/image/upload/v1605910968/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_1_f5sr3c.jpg" alt="drawing" width="200"/>
   <img src="https://res.cloudinary.com/dzf56esap/image/upload/v1605910968/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_2_w0opo0.jpg" alt="drawing" width="200"/>
   </div>
-  * TELA INICIAL, CADASTRO E VISUALIZAÇÃO DO ANÚNCIO 
+  
+  - TELA INICIAL, CADASTRO E VISUALIZAÇÃO DO ANÚNCIO 
   <div>
   <img src="https://res.cloudinary.com/dzf56esap/image/upload/v1605910967/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_4_pszh67.jpg" width="200"/>
   <img src="https://res.cloudinary.com/dzf56esap/image/upload/v1605910968/tdx/WhatsApp_Image_2020-11-20_at_18.20.36_3_hcgljl.jpg" alt="drawing" width="200"/>
