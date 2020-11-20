@@ -1,6 +1,5 @@
 
 <h1 align="center"> TUDOEX </h1>
-<span style="color:red"> *some emphasized markdown text*</span>
 
 ![Logo](https://res.cloudinary.com/dzf56esap/image/upload/v1605906242/tdx/TudoE_i3kfrc.png)
 
