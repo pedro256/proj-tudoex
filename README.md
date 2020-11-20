@@ -27,44 +27,44 @@
 ### Task 1: Criação do Projeto:
 Passos para criar o projeto, montar o ambiente e distribuir as tarefas entre os membros.
 * Tarefas:
-📍 Configurar Bibliotecas;
-📍 Definir ferramentas a serem utilizadas;
-📍 Criar repositório no git;
-📍 Adicionar membros;
-📍 Distribui funções aos membros.
+<p>📍 Configurar Bibliotecas;</p>
+<p>📍 Definir ferramentas a serem utilizadas;</p>
+<p>📍 Criar repositório no git;</p>
+<p>📍 Adicionar membros;</p>
+<p>📍 Distribui funções aos membros.</p>
 
 ### Task 2: Implementar a Tela Inicial
 A tela inicial será onde o usuário irá logar ou se cadastrar para visualizar a tela de menu.
 * Tarefas:
-📍 Criar o xml da activity;
-📍 Criar arquivo java;
-📍 Adicionar eventos;
-📍 Definir Login e Cadastro separadamente.
+<p>📍 Criar o xml da activity;</p>
+<p>📍 Criar arquivo java;</p>
+<p>📍 Adicionar eventos;</p>
+<p>📍 Definir Login e Cadastro separadamente.</p>
 
 ### Task 3: Implementar a Tela de Menu e Pesquisa
 * Tarefas:
-📍 Criar o xml da activity;
-📍 Criar arquivo java;
-📍 Adicionar eventos;
-📍 Criar menu;
-📍 Criar barra de pesquisa;
-📍 Implementar sistema de pesquisa.
+<p>📍 Criar o xml da activity;</p>
+<p>📍 Criar arquivo java;</p>
+<p>📍 Adicionar eventos;</p>
+<p>📍 Criar menu;</p>
+<p>📍 Criar barra de pesquisa;</p>
+<p>📍 Implementar sistema de pesquisa.</p>
 
 ### Task 4: Criação e Implementação de Banco de Dados 
 * Tarefas:
-📍 Criar banco de dados utilizando Firebase;
-📍 Implementar conexão entre aplicação e banco;
+<p>📍 Criar banco de dados utilizando Firebase;</p>
+<p>📍 Implementar conexão entre aplicação e banco;</p>
 
 ### Task 5: Implementação de Criação de Publicações Pesquisa e Visualização de Publicações
 * Tarefas:
-📍 Criar layout;
-📍 Criar arquivo java;
-📍 Criar Activitys;
-📍 Criar eventos;
-📍 Criar listagem.
+<p>📍 Criar layout;</p>
+<p>📍 Criar arquivo java;</p>
+<p>📍 Criar Activitys;</p>
+<p>📍 Criar eventos;</p>
+<p>📍 Criar listagem.</p>
 
 ### Task 6: Testes e Reparo de Erros
-📍 Membros deverão testar e consertar os devidos erros.
+<p>📍 Membros deverão testar e consertar os devidos erros.</p>
 
 ## 📲 **Instalação**
 
