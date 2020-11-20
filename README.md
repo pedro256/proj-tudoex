@@ -6,7 +6,7 @@
 
 ## 📃 **Introdução**
   O grande óbice em questão está diretamente relacionado à defasagem no ramo comercial.   Na perspectiva do cliente, é necessário sair de casa, comprar por preços elevados, estar sujeito à intromissão de vendedores, entre outros. Já para o vendedor, a área de cobertura é limitada à sua localidade, sem falar nas despesas apuradas pela locação do imóvel e pagamento dos funcionários. O presente aplicativo visa, assim, inovar o modo como se compra e vende, fornecendo comodidade, privacidade, variedade e preço acessível num panorama global.
-## 👉 **Objetivo**
+  
 ##  📑**Funcionalidades**
 <p>:heavy_check_mark: Cadastro de usuários e de publicações</p>
 <p>:heavy_check_mark: Login dos Usuários </p>
