@@ -3,55 +3,36 @@
 
 ![Logo](https://res.cloudinary.com/dzf56esap/image/upload/v1605906242/tdx/TudoE_i3kfrc.png)
 
-
 <p align="center">
- <a href="#dog-objetivo">Objetivo</a> •
- <a href="#dog-objetivo">Objetivo</a> •
- <a href="#cat-público-alvo">Público-Alvo</a> • 
- <a href="#dog-funcionalidades">Funcionalidades</a> • 
- <a href="#cat-instalação">Instalação</a> • 
- <a href="#dog-integrantes-e-seus-papéis">Integrantes e seus Papéis</a> • 
+ <a href="#td-introdução">INTRODUÇÃO</a> •
+ <a href="#td-objetivo">OBJETIVO</a> • 
+ <a href="#td-funcionalidades">FUNCIONABILIDADES</a> • 
+ <a href="#td-instalacao">INSTALAÇÃO</a> • 
+ <a href="#td-contribuidores">CONTRIBUIDORES</a> • 
 </p>
 
-## :dog: **Objetivo**
+## :td: **Introdução**
+## :td: **Objetivo**
+## :td: **Funcionalidades**
+<p>:heavy_check_mark: Cadastro de usuários e de publicações</p>
+<p>:heavy_check_mark: Login dos Usuários </p>
+<p>:heavy_check_mark: Perfil dos Usuários</p>
+<p>:heavy_check_mark: Visualizar todas publicações</p>
+<p>:heavy_check_mark: Editar seus dados e excluir suas publicações</p>
+<p>:heavy_check_mark: Pesquisar publicações</p>
 
-
-
-
-## :cat: **Público-Alvo**
-
-- Ong´s
-- Donos de pets
-- Projetos sociais-ambientais
-- Interessados em pets
-
-
-## :dog: **Funcionalidades**
-<p>:heavy_check_mark: Cadastro de Usuário</p>
-<p>:heavy_check_mark: Login do Usuário</p>
-<p>:heavy_check_mark: Perfil do Usuário</p>
-<p>:heavy_check_mark: Postar Animais para Adoção</p>
-<p>:heavy_check_mark: Postar Animais Perdidos</p>
-<p>:heavy_check_mark: Filtrar Animais por Cor, Sexo e Tipo (Cão ou Gato)</p>
-<p>:heavy_check_mark: Chat Interativo</p>
-<p>:heavy_check_mark: Denunciar Maus-Tratos</p>
-
-
-
-
-
-## :cat: **Instalação**
+## :td: **Instalação**
 
 Você pode baixar o apk clicando no link abaixo 👇
 
-[Download - Puppies](https://drive.google.com/file/d/1gCR4Es3eQp3ugV7hPr6Ms4PhccTVY4fM/view?usp=sharing)
+[Download - tudoex](https://www.mediafire.com/file/f1ka50wgph0swmu/tudoex.apk/file)
 
 Antes de começar, note que apesar de ser possível instalar aplicativos de fontes não oficiais no Android, é recomendável instalar somente aplicativos APK de “fontes confiáveis”, para evitar os aplicativos maliciosos.
 
 1. Para começar, você precisa liberar a instalação de aplicativos de “fontes desconhecidas” no Android. Para isso, em seu dispositivo Android, abra Configurar > Segurança e marque a opção Fontes desconhecidas.
 Essa opção está disponível no Android 4.0 ou superior. Se você tem uma versão anterior do Android, você deve acessar “Configurações > Aplicativos”, selecionar a opção “Fontes Desconhecidas” e tocar em OK.
 
-2. Acesse o site que oferece o download do aplicativo em formato APK diretamente do navegador Chrome em seu smartphone e faça o download do “arquivo APK” do aplicativo que pretende instalar no smartphone. Acesse o link > [Download - Puppies](https://drive.google.com/file/d/1gCR4Es3eQp3ugV7hPr6Ms4PhccTVY4fM/view?usp=sharing)
+2. Acesse o site que oferece o download do aplicativo em formato APK diretamente do navegador Chrome em seu smartphone e faça o download do “arquivo APK” do aplicativo que pretende instalar no smartphone. Acesse o link > [Download - tudoex](https://www.mediafire.com/file/f1ka50wgph0swmu/tudoex.apk/file)
 
 3. Em alguns casos, o Chrome pode exibir uma mensagem informando que o arquivo pode danificar o seu dispositivo e se você quer manter o arquivo APK mesmo assim. Toque em “OK” para autorizar o download.
 
@@ -63,11 +44,3 @@ Obs.: Se você não conseguir iniciar a instalação do aplicativo através da n
 
 Se não ficou muito claro, acesse o [SOFTDOWNLOAD](https://www.softdownload.com.br/como-instalar-aplicativos-apk-android.html)
 
-
-## :dog: **Integrantes e seus Papéis**
-<ul>
-  <li>giulia142020 (Giulia Araújo) - Programadora</il>
-  <li>kirksahdo (Kirk Sahdo)- Programador</il>
-  <li>sntgorosa (Santiago Rosa) - Analista</il>
-  <li> isakinho2(Isaac Lopes) - Analista</il>
-</ul>
