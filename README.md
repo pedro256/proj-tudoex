@@ -1,10 +1,11 @@
 
-# TudoEx
+<h1 align="center"> TUDOEX </h1>
 
 ![Logo](https://res.cloudinary.com/dzf56esap/image/upload/v1605906242/tdx/TudoE_i3kfrc.png)
 
 
 <p align="center">
+ <a href="#dog-objetivo">Objetivo</a> •
  <a href="#dog-objetivo">Objetivo</a> •
  <a href="#cat-público-alvo">Público-Alvo</a> • 
  <a href="#dog-funcionalidades">Funcionalidades</a> • 
@@ -35,11 +36,7 @@
 <p>:heavy_check_mark: Chat Interativo</p>
 <p>:heavy_check_mark: Denunciar Maus-Tratos</p>
 
-![Login e Cadastro](https://github.com/giulia142020/PuppiesApp/blob/master/app/src/main/res/drawable/1_puppies.gif)
-![Adoção](https://github.com/giulia142020/PuppiesApp/blob/master/app/src/main/res/drawable/2_puppies.gif)
-![Cadastro de Animais e Perfil](https://github.com/giulia142020/PuppiesApp/blob/master/app/src/main/res/drawable/3_puppies.gif)
-![Animais Perdidos](https://github.com/giulia142020/PuppiesApp/blob/master/app/src/main/res/drawable/4_puppies.gif)
-![Chat e Denuncia](https://github.com/giulia142020/PuppiesApp/blob/master/app/src/main/res/drawable/5_puppies.gif)
+
 
 
 
