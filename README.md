@@ -15,6 +15,57 @@
 <p>:heavy_check_mark: Editar seus dados e excluir suas publicações</p>
 <p>:heavy_check_mark: Pesquisar publicações</p>
 
+## 📚 **Bibliotecas utilizadas**
+<ul>
+  <li>Picasso - Carregar imagens das publicações dos usuários</li>
+  <li>Firebase Auth - autenticação do usuário no firebase</li>
+  <li>Firebase Realtimedatabase - banco de dados firebase</li>
+</ul>
+
+## 🖌 **Tarefas**
+
+### Task 1: Criação do Projeto:
+Passos para criar o projeto, montar o ambiente e distribuir as tarefas entre os membros.
+* Tarefas:
+📍 Configurar Bibliotecas;
+📍 Definir ferramentas a serem utilizadas;
+📍 Criar repositório no git;
+📍 Adicionar membros;
+📍 Distribui funções aos membros.
+
+### Task 2: Implementar a Tela Inicial
+A tela inicial será onde o usuário irá logar ou se cadastrar para visualizar a tela de menu.
+* Tarefas:
+📍 Criar o xml da activity;
+📍 Criar arquivo java;
+📍 Adicionar eventos;
+📍 Definir Login e Cadastro separadamente.
+
+### Task 3: Implementar a Tela de Menu e Pesquisa
+* Tarefas:
+📍 Criar o xml da activity;
+📍 Criar arquivo java;
+📍 Adicionar eventos;
+📍 Criar menu;
+📍 Criar barra de pesquisa;
+📍 Implementar sistema de pesquisa.
+
+### Task 4: Criação e Implementação de Banco de Dados 
+* Tarefas:
+📍 Criar banco de dados utilizando Firebase;
+📍 Implementar conexão entre aplicação e banco;
+
+### Task 5: Implementação de Criação de Publicações Pesquisa e Visualização de Publicações
+* Tarefas:
+📍 Criar layout;
+📍 Criar arquivo java;
+📍 Criar Activitys;
+📍 Criar eventos;
+📍 Criar listagem.
+
+### Task 6: Testes e Reparo de Erros
+📍 Membros deverão testar e consertar os devidos erros.
+
 ## 📲 **Instalação**
 
 Você pode baixar o apk clicando no link abaixo 👇
@@ -33,28 +84,3 @@ Caso esteja com duvidas de como instalar o aplicativo dê uma olhada nesse site:
   <li>rebecalirac (Rebeca Carolina Lira de Carvalho Otéro) - Designer</il>
 </ul>
 
-## 📚 **Bibliotecas utilizadas**
-<ul>
-  <li>Picasso - Carregar imagens das publicações dos usuários</li>
-  <li>Firebase Auth - autenticação do usuário no firebase</li>
-  <li>Firebase Realtimedatabase - banco de dados firebase</li>
-</ul>
-
-## 🖌 **Tarefas**
-
-### Task 1: Criação do Projeto:
-Passos para criar o projeto, montar o ambiente e distribuir as tarefas entre os membros.
-* Tarefas:
-- Configurar Bibliotecas;
-- Definir ferramentas a serem utilizadas;
-- Criar repositório no git;
-- Adicionar membros;
-- Distribui funções aos membros.
-
-### Task 2: Implementar a Tela Inicial
-A tela inicial será onde o usuário irá logar ou se cadastrar para visualizar a tela de menu.
-* Tarefas:
-- Criar o xml da activity;
-- Criar arquivo java;
-- Adicionar eventos;
-- Definir Login e Cadastro separadamente.
