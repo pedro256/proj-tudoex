@@ -39,12 +39,10 @@ Caso esteja com duvidas de como instalar o aplicativo dê uma olhada nesse site:
   <li>Firebase Auth - autenticação do usuário no firebase</li>
   <li>Firebase Realtimedatabase - banco de dados firebase</li>
 </ul>
-## **Tarefas**
+## 🖌 **Tarefas**
 ### Task 1: Criação do Projeto
-
-Passos para criar o projeto, montar o ambiente e distribuir as tarefas entre os membros.
-
-Tarefas:
+#### Passos para criar o projeto, montar o ambiente e distribuir as tarefas entre os membros.
+   *Tarefas:
 Configurar Bibliotecas;
 Definir ferramentas a serem utilizadas;
 Criar repositório no git;
