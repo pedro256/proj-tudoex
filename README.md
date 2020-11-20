@@ -3,17 +3,10 @@
 
 ![Logo](https://res.cloudinary.com/dzf56esap/image/upload/v1605906242/tdx/TudoE_i3kfrc.png)
 
-<p align="center">
- <a href="#td-introdução">INTRODUÇÃO</a> •
- <a href="#td-objetivo">OBJETIVO</a> • 
- <a href="#td-funcionalidades">FUNCIONABILIDADES</a> • 
- <a href="#td-instalacao">INSTALAÇÃO</a> • 
- <a href="#td-contribuidores">CONTRIBUIDORES</a> • 
-</p>
 
-## :td: **Introdução**
-## :td: **Objetivo**
-## :td: **Funcionalidades**
+## 📃 **Introdução**
+## 👉 **Objetivo**
+##  📑**Funcionalidades**
 <p>:heavy_check_mark: Cadastro de usuários e de publicações</p>
 <p>:heavy_check_mark: Login dos Usuários </p>
 <p>:heavy_check_mark: Perfil dos Usuários</p>
@@ -21,7 +14,7 @@
 <p>:heavy_check_mark: Editar seus dados e excluir suas publicações</p>
 <p>:heavy_check_mark: Pesquisar publicações</p>
 
-## :td: **Instalação**
+## 📲 **Instalação**
 
 Você pode baixar o apk clicando no link abaixo 👇
 
@@ -44,3 +37,7 @@ Obs.: Se você não conseguir iniciar a instalação do aplicativo através da n
 
 Se não ficou muito claro, acesse o [SOFTDOWNLOAD](https://www.softdownload.com.br/como-instalar-aplicativos-apk-android.html)
 
+## 👩‍💻 **Integrantes**
+<ul>
+  <li>pedro256 (Pedro Henrique) - Programador</il>
+</ul>
