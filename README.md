@@ -6,6 +6,9 @@
 
 ## 📃 **Introdução**
   O grande óbice em questão está diretamente relacionado à defasagem no ramo comercial.   Na perspectiva do cliente, é necessário sair de casa, comprar por preços elevados, estar sujeito à intromissão de vendedores, entre outros. Já para o vendedor, a área de cobertura é limitada à sua localidade, sem falar nas despesas apuradas pela locação do imóvel e pagamento dos funcionários. O presente aplicativo visa, assim, inovar o modo como se compra e vende, fornecendo comodidade, privacidade, variedade e preço acessível num panorama global.
+
+## 🎯 **Objetivo**
+  O presente projeto foi desenvolvido com com o intuito de não só incentivar pequenos empreendedores, mas também comprar de forma sustentável, consumir responsavelmente além de outras vantagens como exclusividade e economia, sem abrir mão da praticidade e qualidade.
   
 ##  📑**Funcionalidades**
 <p>:heavy_check_mark: Cadastro de usuários e de publicações</p>
